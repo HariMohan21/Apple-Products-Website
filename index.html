@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Products Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with Navigation Bar -->
+  <header id="home">
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Discover Apple Products</h1>
+      <p>Experience the innovation and design that makes Apple unique.</p>
+    </div>
+  </header>
+
+  <!-- Products Section with Search & Sorting Filters -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="filter-container">
+      <input type="text" id="search-input" placeholder="Search products...">
+      <select id="sort-select">
+        <option value="default">Sort By</option>
+        <option value="name-asc">Name: A to Z</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+    </div>
+    <div id="product-list" class="product-list">
+      <!-- Product cards will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video">
+    <h2>Watch Our Latest Ad</h2>
+    <video controls width="640">
+      <source src="apple-ad.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Apple</h2>
+    <p>Apple is synonymous with innovation, combining cutting-edge technology with elegant design. Discover a world where technology meets art.</p>
+  </section>
+
+  <!-- Contact Section with Input Fields -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email">
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your message"></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Apple Products Showcase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
